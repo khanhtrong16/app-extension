@@ -1,0 +1,17 @@
+{% schema %}
+ {
+   "name": "Conditional App block",
+   "target": "section",
+   "stylesheet": "app.css",
+   "javascript": "app.js",
+   "available_if": "{{ app.metafields.conditional.block1 }}",
+   "settings": [
+      {
+        "label": "Colour",
+        "id": "colour",
+        "type": "color",
+        "default": "#000000"
+      }
+   ]
+ }
+{% endschema %}
